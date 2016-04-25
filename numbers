@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var act  =  process.argv[2];
+var num  = +process.argv[3];
+var num2 = +process.argv[4];
+
+if (act === "add") {
+	console.log (num + num2);
+}
+else if (act === "sub") {
+	console.log (num - num2);
+} 
+else if (act === "multi") {
+	console.log (num * num2);
+}
+else if ((act === "div") && num2 != "0") {
+	console.log (num / num2);
+}
+if ((act === "div") && num2 == "0") {
+	console.log ("You can't divide by zero silly")
+}
